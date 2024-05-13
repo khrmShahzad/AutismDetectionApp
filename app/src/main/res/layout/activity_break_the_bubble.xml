@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BreakTheBubbleActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/app_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/testbreaktheBubbleBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/testbreaktheBubbleBack"
+            android:fontFamily="@font/montserratsembold"
+            android:text="Break The Bubble"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvBreakBubbleScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/montserratsembold"
+        android:text="Timer 00:10"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <ImageView
+        android:id="@+id/bubbleOne"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/bubbleTwo"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleFive"
+        app:layout_constraintStart_toEndOf="@+id/bubbleOne"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleOne" />
+
+    <ImageView
+        android:id="@+id/bubbleThree"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bubbleTwoleve"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleTwoleve" />
+
+    <ImageView
+        android:id="@+id/bubbleFour"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleTwo" />
+
+    <ImageView
+        android:id="@+id/bubbleFive"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBreakBubbleScore" />
+
+    <ImageView
+        android:id="@+id/bubbleSix"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintStart_toEndOf="@+id/bubbleOne"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleFive" />
+
+    <ImageView
+        android:id="@+id/bubbleSeven"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleThirteen"
+        app:layout_constraintStart_toEndOf="@+id/bubbleTwo"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleSix" />
+
+    <ImageView
+        android:id="@+id/bubbleEight"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintStart_toStartOf="@+id/bubbleFour"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleSeven" />
+
+    <ImageView
+        android:id="@+id/bubbleNine"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleEleven" />
+
+    <ImageView
+        android:id="@+id/bubbleTen"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleNine"
+        app:layout_constraintStart_toEndOf="@+id/bubbleSeven"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleNine" />
+
+    <ImageView
+        android:id="@+id/bubbleEleven"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="@+id/bubbleEight"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleSeven"
+        app:layout_constraintStart_toEndOf="@+id/bubbleFour"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleTwo" />
+
+    <ImageView
+        android:id="@+id/bubbleTwoleve"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleThirteen"
+        app:layout_constraintStart_toEndOf="@+id/bubbleEight"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleSeven" />
+
+    <ImageView
+        android:id="@+id/bubbleThirteen"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleTen" />
+
+    <ImageView
+        android:id="@+id/bubbleFourteen"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintBottom_toBottomOf="@+id/bubbleFiveteen"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleNine"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleNine" />
+
+    <ImageView
+        android:id="@+id/bubbleFiveteen"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/bubble"
+        app:layout_constraintStart_toStartOf="@+id/bubbleEight"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleTwoleve" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

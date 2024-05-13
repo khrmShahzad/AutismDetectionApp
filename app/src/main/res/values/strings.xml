@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutismDetectionApp</string>
+    <string name="autism_problem_find">You may find it helpful to know that your child has been diagnosed with Autism.</string>
+    <string name="autism_problem_not_find">You\'ll be glad to know that your child does not have Autism.</string>
+</resources>

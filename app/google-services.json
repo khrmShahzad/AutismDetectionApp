@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739574239464",
+    "project_id": "autismapp-5330e",
+    "storage_bucket": "autismapp-5330e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739574239464:android:e5d176ef69b9ffc368395d",
+        "android_client_info": {
+          "package_name": "com.autismdetectionapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD089TnWBqMAC_pHd-GUvBT_GOrdFhwMR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
